@@ -1,10 +1,10 @@
-data "aws_ami" "ubuntu" {
+data "aws_ami" "amazon" {
 
     most_recent = true
 
     filter {
       name = "name"
-      values = ["ubuntu/images/hvm-ssd/*22.04-amd64-server-*"]
+      values = ["ami-02a2af70a66af6dfb"]
     }
 
     filter {
