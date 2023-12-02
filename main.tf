@@ -23,7 +23,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "app_server" {
-    ami = data.aws_ami.ubuntu.id
+    ami = data.aws_ami.amazon.id
     instance_type = "t3.micro"
     key_name = "app-ssh-key"
 
