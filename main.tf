@@ -9,7 +9,7 @@ data "aws_ami" "ubuntu" {
 
     filter {
       name = "virtualization_type"
-      values = "hvm"
+      values = ["hvm"]
     }
   
 }
