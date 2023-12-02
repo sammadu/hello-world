@@ -32,7 +32,7 @@ jobs:
         id: apply
         env:
           TF_VAR_ec2_name: "${{ github.event.inputs.ec2-name }}"
-          run: |
+        run: |
           cd hello-world/
           terraform init
           terraform validate
